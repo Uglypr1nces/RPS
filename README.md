@@ -17,7 +17,7 @@ GitHub: Version control and collaboration platform for managing project code.
 How to Play:
 ---------------------------------------------------------------------------------------------------------------------------------------
 
--Clone the repository:
+- Clone the repository:
 ```bash
     git clone https://github.com/Uglypr1nces/RPS.git
 ```
