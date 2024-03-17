@@ -17,6 +17,22 @@ GitHub: Version control and collaboration platform for managing project code.
 How to Play:
 ---------------------------------------------------------------------------------------------------------------------------------------
 
+-Clone the repository:
+```bash
+    git clone https://github.com/Uglypr1nces/RPS.git
+```
+
+-Move into the directory:
+```bash
+    cd RPS
+```
+
+-Install Python via the official website https://www.python.org/downloads/:
+
+-Run the Program:
+```bash
+    python3 RPS.py
+```
 
 Contributing:
 ---------------------------------------------------------------------------------------------------------------------------------------
