@@ -5,9 +5,9 @@ This project is an implementation of a classic rock-paper-scissors game that all
 Features:
 ---------------------------------------------------------------------------------------------------------------------------------------
 
-Simple: Easy to setup and start playing
-Reliable: Will work 99.9999% of the time
-Customizable: Easy to add or remove features, let your creativity flow.
+- Simple: Easy to setup and start playing
+- Reliable: Will work 99.9999% of the time
+- Customizable: Easy to add or remove features, let your creativity flow.
 
 Technologies Used:
 ---------------------------------------------------------------------------------------------------------------------------------------
