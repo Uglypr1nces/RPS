@@ -11,8 +11,8 @@ Customizable: Easy to add or remove features, let your creativity flow.
 
 Technologies Used:
 ---------------------------------------------------------------------------------------------------------------------------------------
-Python: Programming language for everything.
-GitHub: Version control and collaboration platform for managing project code.
+- Python: Programming language for everything.
+- GitHub: Version control and collaboration platform for managing project code.
 
 How to Play:
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -22,14 +22,14 @@ How to Play:
     git clone https://github.com/Uglypr1nces/RPS.git
 ```
 
--Move into the directory:
+- Move into the directory:
 ```bash
     cd RPS
 ```
 
--Install Python via the official website https://www.python.org/downloads/:
+- Install Python via the official website https://www.python.org/downloads/:
 
--Run the Program:
+- Run the Program:
 ```bash
     python3 RPS.py
 ```
