@@ -10,6 +10,7 @@ def winner_checker(choice1,choice2):
 
 while True:
     choice = input("What do you want to pick? (Rock, Paper or scissors)")
+    choice = choice.lower()
     choices = ["rock", "paper","scissors"]
 
     if choice in choices:
