@@ -13,7 +13,5 @@ class Game:
                 round.evaluate()
             else:
                 print("Please pick one of the options listed.")
-
-
 game = Game()
 game.play()

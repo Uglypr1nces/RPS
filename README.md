@@ -2,16 +2,6 @@ Rock-Paper-Scissors Game
 ---------------------------------------------------------------------------------------------------------------------------------------
 This project is an implementation of a classic rock-paper-scissors game that allows you to play against the computer.Choose between the different choices and hope for the best!
 
-<<<<<<< HEAD
-=======
-Features:
----------------------------------------------------------------------------------------------------------------------------------------
-
-- Simple: Easy to setup and start playing
-- Reliable: Will work 99.9999% of the time
-- Customizable: Easy to add or remove features, let your creativity flow.
-
->>>>>>> 30086cf29b149081171e95a70fbbed08b4875c41
 Technologies Used:
 ---------------------------------------------------------------------------------------------------------------------------------------
 - Python: Programming language for everything.

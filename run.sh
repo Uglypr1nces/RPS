@@ -1,2 +1,2 @@
 #!/bin/sh
-python3 game.py #run python script
+python3 game/game.py #run python script
