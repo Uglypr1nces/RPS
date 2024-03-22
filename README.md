@@ -2,6 +2,7 @@ Rock-Paper-Scissors Game
 ---------------------------------------------------------------------------------------------------------------------------------------
 This project is an implementation of a classic rock-paper-scissors game that allows you to play against the computer.Choose between the different choices and hope for the best!
 
+
 Technologies Used:
 ---------------------------------------------------------------------------------------------------------------------------------------
 - Python: Programming language for everything.
@@ -24,7 +25,7 @@ How to Play:
 
 - Run the Program:
 ```bash
-    python3 RPS.py
+    bash run.sh
 ```
 
 Contributing:
