@@ -2,27 +2,37 @@ Rock-Paper-Scissors Game
 ---------------------------------------------------------------------------------------------------------------------------------------
 This project is an implementation of a classic rock-paper-scissors game that allows you to play against the computer.Choose between the different choices and hope for the best!
 
+<<<<<<< HEAD
+=======
+Features:
+---------------------------------------------------------------------------------------------------------------------------------------
+
+- Simple: Easy to setup and start playing
+- Reliable: Will work 99.9999% of the time
+- Customizable: Easy to add or remove features, let your creativity flow.
+
+>>>>>>> 30086cf29b149081171e95a70fbbed08b4875c41
 Technologies Used:
 ---------------------------------------------------------------------------------------------------------------------------------------
-Python: Programming language for everything.
-GitHub: Version control and collaboration platform for managing project code.
+- Python: Programming language for everything.
+- GitHub: Version control and collaboration platform for managing project code.
 
 How to Play:
 ---------------------------------------------------------------------------------------------------------------------------------------
 
--Clone the repository:
+- Clone the repository:
 ```bash
     git clone https://github.com/Uglypr1nces/RPS.git
 ```
 
--Move into the directory:
+- Move into the directory:
 ```bash
     cd RPS
 ```
 
--Install Python via the official website https://www.python.org/downloads/:
+- Install Python via the official website https://www.python.org/downloads/:
 
--Run the Program:
+- Run the Program:
 ```bash
     python3 RPS.py
 ```
