@@ -22,9 +22,15 @@ How to Play:
 
 - Install Python via the official website https://www.python.org/downloads/:
 
-- Run the Program:
+- Run the Program windows:
 ```bash
     bash run.sh
+```
+
+- Run the Program linux and mac:
+```bash
+    chmod +x run.sh
+    ./run.sh
 ```
 
 Contributing:
