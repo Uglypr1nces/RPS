@@ -1,26 +1,33 @@
-class Round:
+from game.utils import *
 
-    RESULT_MESSAGES = {
-    "win": "Player won!",
-    "lose": "Computer won!",
-    "tie": "It's a tie!"
-    }
+
+class Outcome:
+    # winner is a string or None if it's a tie
+    def __init__(self, winner):
+        self.winner = winner
+
+    def to_string(self):
+        if self.winner:
+            return f"{self.winner} won!"
+        return "It's a tie!"
+
+
+class Round:
 
     def __init__(self, player_choice, computer_choice):
         self.player_choice = player_choice
         self.computer_choice = computer_choice
 
-    def evaluate(self):
-        result = self.get_result()
-
-        print(f"Player picked {self.player_choice.capitalize()}, Computer picked {self.computer_choice.capitalize()}. {self.RESULT_MESSAGES[result]}")
+    def evaluate(self) -> Outcome:
+        outcome: Outcome = self.get_result()
+        return outcome
 
     def get_result(self):
         if self.player_choice == self.computer_choice:
-            return "tie"
-        elif (self.player_choice == "rock" and self.computer_choice == "scissors") or \
-             (self.player_choice == "paper" and self.computer_choice == "rock") or \
-             (self.player_choice == "scissors" and self.computer_choice == "paper"):           
-            return "win"
+            return Outcome(winner=None)
+        elif (self.player_choice == ROCK and self.computer_choice == SCISSOR) or \
+             (self.player_choice == PAPER and self.computer_choice == ROCK) or \
+             (self.player_choice == SCISSOR and self.computer_choice == PAPER):
+            return Outcome("player")
         else:
-            return "lose"
+            return Outcome("computer")

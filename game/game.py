@@ -1,23 +1,24 @@
 import random
-from round import Round
+from game.round import *
+from game.utils import *
+
+choices = [ROCK, PAPER, SCISSOR]
+
 
 class Game:
-    choices = ["rock", "paper", "scissors"]
-
     def __init__(self):
         self.rounds_played = 0
 
     def play(self):
         while True:
             player_choice = input("What do you want to pick? (Rock, Paper, or Scissors): ").lower()
-            if player_choice in self.choices:
-                computer_choice = random.choice(self.choices)
+            if player_choice in choices:
+                computer_choice = random.choice(choices)
+                print(f"Player picked {player_choice.capitalize()}, Computer picked {computer_choice.capitalize()}")
                 game_round = Round(player_choice, computer_choice)
                 self.rounds_played += 1
-                game_round.evaluate()
+                outcome = game_round.evaluate()
+                print(outcome.to_string())
                 print(f"Rounds played: {self.rounds_played}")
             else:
                 print("Please pick one of the options listed.")
-
-game = Game()
-game.play()

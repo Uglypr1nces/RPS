@@ -24,13 +24,12 @@ How to Play:
 
 - Run the Program windows:
 ```bash
-    bash run.sh
+    bash main.py
 ```
 
 - Run the Program linux and mac:
 ```bash
-    chmod +x run.sh
-    ./run.sh
+    ./main.py
 ```
 
 Contributing:
