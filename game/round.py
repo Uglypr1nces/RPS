@@ -1,6 +1,5 @@
 from game.utils import *
 
-
 class Outcome:
     # winner is a string or None if it's a tie
     def __init__(self, winner):
@@ -10,7 +9,6 @@ class Outcome:
         if self.winner:
             return f"{self.winner} won!"
         return "It's a tie!"
-
 
 class Round:
 
@@ -28,6 +26,6 @@ class Round:
         elif (self.player_choice == ROCK and self.computer_choice == SCISSOR) or \
              (self.player_choice == PAPER and self.computer_choice == ROCK) or \
              (self.player_choice == SCISSOR and self.computer_choice == PAPER):
-            return Outcome("player")
+            return Outcome("Player")
         else:
-            return Outcome("computer")
+            return Outcome("Computer")

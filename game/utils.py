@@ -1,3 +1,5 @@
 ROCK = "rock"
 PAPER = "paper"
-SCISSOR = "scissor"
+SCISSOR = "scissors"
+
+choices = [ROCK,PAPER,SCISSOR]
