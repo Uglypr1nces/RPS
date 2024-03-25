@@ -1,14 +1,22 @@
 import random
-from game.round import *
-from game.utils import *
+import sqlite3
 import sys
 import time
+from game.round import *
+from game.utils import *
 
 class Game:
     def __init__(self):
         self.rounds_played = 0
         self.player_wins = 0
         self.computer_wins = 0
+        self.conn = sqlite3.connect("database/rounds.db")
+        self.cursor = self.conn.cursor()
+
+    def record_results(self,rounds_played,player_wins,computer_wins):
+        self.cursor.execute("INSERT INTO rounds (rounds_played, player_wins, computer_wins) VALUES (?,?,?)",
+            (rounds_played,player_wins,computer_wins))
+        self.conn.commit()
 
     def waiting_animation(self,wait_time):
         while wait_time != 0:
@@ -43,5 +51,8 @@ class Game:
                 self.rounds_played += 1
                 self.waiting_animation(3)
                 print(f"Rounds played: {self.rounds_played}. Player wins: {self.player_wins}, Computer wins: {self.computer_wins}")
+
+                self.record_results(self.rounds_played,self.player_wins,self.computer_wins)
             else:
                 print("Please pick one of the options listed.")
+
